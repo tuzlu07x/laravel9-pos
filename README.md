@@ -4,7 +4,7 @@
 [Pos](https://github.com/mewebstudio/pos)
 
 ### Minimum Gereksinimler
-- PHP >= 7.1.3
+- PHP >= 8.1
 - ext-dom
 - ext-json
 - ext-openssl
@@ -12,15 +12,8 @@
 
 ### Kurulum
 ```sh
-composer require mews/laravel9-pos
+composer require tuzlufatih/laravel-pos
 ```
-
-### Laravel 5.6 için
-```sh
-$ composer require --no-update "mews/laravel-pos:0.2.0"
-$ composer update
-```
-
 `config/app.php` dosyasındaki `providers` kısmına aşağıdaki kodu ekleyin:
 ```php
 'providers' => [
@@ -39,7 +32,7 @@ $ composer update
 
 Konsolda, proje ana dizinindeyken aşağıdaki komut girilir:
 ```sh
-$ php artisan vendor:publish --provider="Mews\LaravelPos\LaravelPosServiceProvider"
+php artisan vendor:publish --provider="Mews\LaravelPos\LaravelPosServiceProvider"
 ```
 
 ### Kullanım
@@ -48,7 +41,7 @@ $ php artisan vendor:publish --provider="Mews\LaravelPos\LaravelPosServiceProvid
 $pos = \Mews\LaravelPos\Facades\LaravelPos::instance();
 
 $pos->account([
-    'bank'          => 'akbank',
+    'bank'          => 'garanti',
     'model'         => 'regular',
     'client_id'     => 'XXXXX',
     'username'      => 'XXXXX',
