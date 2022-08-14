@@ -12,7 +12,7 @@
 
 ### Kurulum
 ```sh
-$ composer require mews/laravel-pos
+composer require mews/laravel9-pos
 ```
 
 ### Laravel 5.6 için
