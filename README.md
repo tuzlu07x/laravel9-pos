@@ -32,7 +32,7 @@ composer require tuzlufatih/laravel-pos
 
 Konsolda, proje ana dizinindeyken aşağıdaki komut girilir:
 ```sh
-php artisan vendor:publish --provider="Mews\LaravelPos\LaravelPosServiceProvider"
+php artisan vendor:publish --provider="tuzlufatih\LaravelPos\LaravelPosServiceProvider"
 ```
 
 ### Kullanım
@@ -50,7 +50,7 @@ $pos->account([
 ]);
 
 $order = [
-    'id'            => 'unique-order-id-' . str_random(16),
+    'id'            => 'unique-order-id-' . Str::random(16),
     'name'          => 'John Doe', // optional
     'email'         => 'mail@customer.com', // optional
     'user_id'       => '12', // optional
