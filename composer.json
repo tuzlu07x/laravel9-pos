@@ -1,10 +1,10 @@
 {
 	"name": "mews/laravel-pos",
 	"type": "package",
-	"description": "Laravel 5 Pos Package",
+	"description": "Laravel 9 Pos Package",
 	"keywords": [
-		"laravel5 pos",
-		"laravel5 sanal pos"
+		"laravel9 pos",
+		"laravel9 sanal pos"
 	],
 	"homepage": "https://github.com/mewebstudio/laravel-pos",
 	"license": "MIT",
