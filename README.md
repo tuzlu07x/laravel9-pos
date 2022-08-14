@@ -1,7 +1,7 @@
 # Türk bankaları için sanal pos paketi (Laravel)
 
 ## Temel Paket
-[Pos](https://github.com/mewebstudio/pos)
+[Pos](https://github.com/tuzlu07x/laravel9-pos)
 
 ### Minimum Gereksinimler
 - PHP >= 8.1
@@ -47,6 +47,8 @@ $pos->account([
     'username'      => 'XXXXX',
     'password'      => 'XXXXX',
     'env'           => 'test',
+    'terminal_id'   => 'xxx',
+
 ]);
 
 $order = [
